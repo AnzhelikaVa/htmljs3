@@ -1,4 +1,3 @@
-
 const list =[
     {title: 'First', done: true},
     {title: 'Second', done: false},
@@ -13,9 +12,9 @@ renderList();
 function addTodo(){
  let todoInput = document.getElementById('input');
  let todoInputValue = todoInput.value;
- list.push[{ title: todoInputValue, done: false }];
+ list.push({ title: todoInputValue, done: false });
 
- todoInput.value='';
+ todoInput.value = '';
  console.log(list);
  renderList();
 }
@@ -32,21 +31,20 @@ function renderList(){
 
     list.forEach(item => {
         li = document.createElement('li');
-        li.innerHTML = item.title;
+        li.innerHTML =item.title;
 
         button = document.createElement('button');
-        button.setAttribute('order', i);
-        button.innerHTML = 'Done'+ i;
+        button.innerHTML = 'Done';
 
-        button.addEventListener('click', (e) => {
-            console.log('!!!', e.target.getAttrubute('order'));
-            makeDone(e.target.getAttribute('order'));
+        button.addEventListener('click', (e)=> {
+            console.log('!!!', e.target);
         })
 
-        if(item.done)li.className = 'done';
+        if (item.done) li.classname ='done';
 
         li.appendChild(button);
         ul.appendChild(li);
     })
 
 }
+

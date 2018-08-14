@@ -1,3 +1,33 @@
 .done {
     text-decoration: line-through;
 }
+body {
+    background-color: powderblue;
+}
+P {
+    text-align: center;
+    font-size: 44px;
+    font-weight: bold;
+}
+button {
+    background-color: whitesmoke;
+    color: black;
+    box-sizing: border-box;
+    width: 90px;
+    height: 50px;
+    border: 1px solid blue;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 26px;
+    font-weight: bold;
+    border-spacing: 10px;
+}
+input {
+    width: 550px;
+    height: 50px;
+    border: 1px solid blue;
+}
+div {
+    text-align: center;
+}
