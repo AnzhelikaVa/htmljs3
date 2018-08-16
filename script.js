@@ -19,7 +19,7 @@ function addTodo(){
  renderList();
 }
 
-function renderList(){
+function renderList() {
     const ul = document.getElementById('list');
     let li;
     let textForLi;
@@ -31,20 +31,27 @@ function renderList(){
 
     list.forEach(item => {
         li = document.createElement('li');
-        li.innerHTML =item.title;
+        li.innerHTML = item.title;
 
         button = document.createElement('button');
         button.innerHTML = 'Done';
 
-        button.addEventListener('click', (e)=> {
+
+        button.addEventListener('click', (e) => {
             console.log('!!!', e.target);
         })
 
-        if (item.done) li.classname ='done';
+        if (item.done) li.classname = 'done';
 
         li.appendChild(button);
         ul.appendChild(li);
-    })
 
+
+
+    })
+    function deleteTodo(e) {
+        var id = e.target.id;
+        console.log("delete an item: " + id);
+    }
 }
 

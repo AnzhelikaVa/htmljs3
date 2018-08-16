@@ -12,22 +12,27 @@ P {
 button {
     background-color: whitesmoke;
     color: black;
-    box-sizing: border-box;
-    width: 90px;
-    height: 50px;
+    width: 100px;
+    height: 45px;
     border: 1px solid blue;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
     font-size: 26px;
     font-weight: bold;
     border-spacing: 10px;
 }
 input {
-    width: 550px;
+    width: 750px;
     height: 50px;
     border: 1px solid blue;
+    font-size:35px;
 }
 div {
     text-align: center;
+}
+div1 {
+    display: flex; justify-content: center;
+}
+li {
+    display: flex; justify-content: center;
+    font-size:35px;
 }
