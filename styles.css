@@ -1,38 +1,37 @@
 .done {
     text-decoration: line-through;
+    color: #9c9c9c;
+}
+h1 {
+    text-align: center;
 }
 body {
-    background-color: powderblue;
+    background-color: #deddff !important;
 }
-P {
-    text-align: center;
-    font-size: 44px;
-    font-weight: bold;
+.btn-outline-light {
+    background-color: cornflowerblue !important;
+    color: white !important;
 }
-button {
-    background-color: whitesmoke;
-    color: black;
-    width: 100px;
-    height: 45px;
-    border: 1px solid blue;
-    text-align: center;
-    font-size: 26px;
-    font-weight: bold;
-    border-spacing: 10px;
+.col-1 {
+    width: 5% !important;
 }
-input {
-    width: 750px;
-    height: 50px;
-    border: 1px solid blue;
-    font-size:35px;
+i, #task, #date {
+    cursor: pointer;
 }
-div {
-    text-align: center;
+.dropdown {
+    display: inline-block;;
 }
-div1 {
-    display: flex; justify-content: center;
+.container {
+    background: #fff;
+    padding-bottom: 2rem;
 }
-li {
-    display: flex; justify-content: center;
-    font-size:35px;
+#search {
+    vertical-align: middle;
 }
+Message Input
+
+
+Message @Julia
+
+
+12 replies

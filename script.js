@@ -2,12 +2,21 @@ const list =[
     {title: 'First', done: true},
     {title: 'Second', done: false},
     ];
-
 renderList();
 
+document.addEventListener("keyup", (event) => {
+    if (event.key === "Enter"){
+        addTodo();
+    }
+
+})
 function makeDone(order){
 list[order].done = !list[order].done;
 renderList();
+}
+function makeDelete(order){
+    list.splice(order,1);
+    renderlist();
 }
 function addTodo(){
  let todoInput = document.getElementById('input');
@@ -34,7 +43,8 @@ function renderList() {
         li.innerHTML = item.title;
 
         button = document.createElement('button');
-        button.innerHTML = 'Done';
+        button.setAttribute('order'; i)
+        button.innerHTML = 'Done' + i;
 
 
         button.addEventListener('click', (e) => {
@@ -43,15 +53,12 @@ function renderList() {
 
         if (item.done) li.classname = 'done';
 
+
+
         li.appendChild(button);
         ul.appendChild(li);
 
-
-
     })
-    function deleteTodo(e) {
-        var id = e.target.id;
-        console.log("delete an item: " + id);
-    }
+
 }
 
